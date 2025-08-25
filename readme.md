@@ -41,7 +41,7 @@ Then you can query the database in flexible ways — by exact word, multiple wor
 ### 1. Build the database
 
 ```bash
-python sananmuunnos_bruteforcer.py build --wordlist kaikkisanat_fusion.txt --db muunnokset.sqlite --k 2
+python sananmuunnos_bruteforce.py build --wordlist kaikkisanat_fusion.txt --db muunnokset.sqlite --k 2
 ```
 If using the kaikkisanat_fusion.txt, generation can take couple of minutes and the db is quite large ~700Mb
 
