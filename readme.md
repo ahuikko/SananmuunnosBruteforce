@@ -50,23 +50,23 @@ This will parse ~100k words in a few minutes and generate hundreds of thousands 
 
 Basic exact match:
 ```bash
-python sananmuunnos_bruteforcer.py query --db muunnokset.sqlite --words kulli --scope swapped
+python sananmuunnos_bruteforce.py query --db muunnokset.sqlite --words kulli --scope swapped
 ```
 Multiple words (must all appear in swapped pair):
 ```bash
-python sananmuunnos_bruteforcer.py query --db muunnokset.sqlite --words tina murahtaa --logic all --scope swapped
+python sananmuunnos_bruteforce.py query --db muunnokset.sqlite --words tina murahtaa --logic all --scope swapped
 ```
 Prefix search (fast, uses index):
 ```bash
-python sananmuunnos_bruteforcer.py query --db muunnokset.sqlite --words kul --mode prefix --scope any
+python sananmuunnos_bruteforce.py query --db muunnokset.sqlite --words kul --mode prefix --scope any
 ```
 Regex search (powerful but slower):
 ```bash
-python sananmuunnos_bruteforcer.py query --db muunnokset.sqlite --words "k(ul|yl)li" --mode regex --scope any
+python sananmuunnos_bruteforce.py query --db muunnokset.sqlite --words "k(ul|yl)li" --mode regex --scope any
 ```
 Count only (no rows, just a number):
 ```bash
-python sananmuunnos_bruteforcer.py query --db muunnokset.sqlite --words "k.*i$" --mode regex --count-only
+python sananmuunnos_bruteforce.py query --db muunnokset.sqlite --words "k.*i$" --mode regex --count-only
 ```
 CLI Options Summary
 build
