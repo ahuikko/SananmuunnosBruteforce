@@ -1,4 +1,4 @@
-# Sananmuunnos Bruteforcer 🔀🇫🇮
+# Sananmuunnos Bruteforce🔀🇫🇮
 
 This project builds a database of **sananmuunnos** (a Finnish wordplay technique where the beginnings of two words are swapped).  
 For example:
